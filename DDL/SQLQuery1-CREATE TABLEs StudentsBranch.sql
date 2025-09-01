@@ -1,19 +1,19 @@
 USE PD_411_SQL
 
---CREATE TABLE Directions
---(
---direction_id     TINYINT          PRIMARY KEY,
---direction_name   NVARCHAR(256)    NOT NULL
---);
+CREATE TABLE Directions
+(
+direction_id     TINYINT          PRIMARY KEY,
+direction_name   NVARCHAR(256)    NOT NULL
+);
 
---CREATE TABLE Groups
---(
---group_id INT  PRIMARY KEY,
---group_name NVARCHAR(15) NOT NULL, 
---directions TINYINT NOT NULL 
---CONSTRAINT FK_Groups_Directions FOREIGN KEY REFERENCES Directions(direction_id)
+CREATE TABLE Groups
+(
+group_id INT  PRIMARY KEY,
+group_name NVARCHAR(15) NOT NULL, 
+directions TINYINT NOT NULL 
+CONSTRAINT FK_Groups_Directions FOREIGN KEY REFERENCES Directions(direction_id)
 
---);
+);
 
 CREATE TABLE Student
 (
