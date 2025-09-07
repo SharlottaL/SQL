@@ -34,6 +34,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery0-DROP DATABASE .sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery1.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1-CREATE TABLEs StudentsBranch.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-ISFNV59\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-ISFNV59\SQLEXPRESS</AssociatedConnSrvName>

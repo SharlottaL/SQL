@@ -1,0 +1,7 @@
+USE PD_321;
+GO
+
+ALTER TABLE Groups
+ALTER COLUMN			learning_days	TINYINT;
+
+SELECT * FROM Groups;
