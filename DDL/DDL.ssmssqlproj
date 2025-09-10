@@ -3,7 +3,22 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="DESKTOP-ISFNV59\SQLEXPRESS:DESKTOP-ISFNV59\botan">
+        <ConnectionNode Name="BOTAN\SQLEXPRESS:BOTAN\botan">
+          <Created>2025-09-10T14:24:33.2227665+03:00</Created>
+          <Type>SQL</Type>
+          <Server>BOTAN\SQLEXPRESS</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>PD_321</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="DESKTOP-ISFNV59\SQLEXPRESS:BOTAN\botan">
           <Created>2025-08-30T10:14:09.3862164+03:00</Created>
           <Type>SQL</Type>
           <Server>DESKTOP-ISFNV59\SQLEXPRESS</Server>
@@ -34,12 +49,6 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery0-DROP DATABASE .sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
-        </FileNode>
         <FileNode Name="SQLQuery1-CREATE TABLEs StudentsBranch.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-ISFNV59\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-ISFNV59\SQLEXPRESS</AssociatedConnSrvName>
@@ -51,6 +60,12 @@
           <AssociatedConnSrvName>DESKTOP-ISFNV59\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery1-DROP TABLE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2.sql</FullPath>
         </FileNode>
         <FileNode Name="SQLQuery2-CREATE TABLE Teachers.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-ISFNV59\SQLEXPRESS:True</AssociatedConnectionMoniker>
@@ -69,6 +84,12 @@
           <AssociatedConnSrvName>DESKTOP-ISFNV59\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery4-CREATE TABLEs Schedule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery7-Holidays.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:BOTAN\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>BOTAN\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7-Holidays.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
