@@ -32,4 +32,5 @@ GO
 
 SELECT 
 	COUNT(stud_id)	AS	N'Количество студентов' 
+	
 FROM Students;

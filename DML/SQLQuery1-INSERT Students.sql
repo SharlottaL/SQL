@@ -12,5 +12,10 @@ VALUES
 		(N'Мещеряков', N'Евгений', N'Александрович', '2000-11-14',5),
 		(N'Стафеев', N'Данил', N'Вадимович', '2003-04-11',5)
 		;
+SELECT group_name AS N'Группа', COUNT ([group]) AS N'Количество студентов'
+FROM Groups, Students WHERE group_id = [group] GROUP BY group_name;
+
+SELECT direction_name AS N'Направление', COUNT(direction) AS N'Количество студентов'
+FROM Students, Groups, Directions WHERE group_id = [group] AND direction = direction_id GROUP BY direction_name;
 
 SELECT * FROM Students;
