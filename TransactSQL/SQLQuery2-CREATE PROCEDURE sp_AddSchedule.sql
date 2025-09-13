@@ -18,7 +18,7 @@ BEGIN
 	DECLARE @lesson_number	AS	TINYINT	=	1;
 	DECLARE	@teacher		AS	INT		=	(SELECT teacher_id			FROM Teachers		WHERE last_name = @teacher_last_name);
 	DECLARE @date			AS	DATE	=	IIF(@start_date != '1900-01-01', @start_date, dbo.GetNextLearningDay(@group_name, DEFAULT));
-
+	DECLARE @holiday        AS  DATE;
 	SET @start_time			=		IIF(@start_time != '00:00', @start_time, (SELECT start_time FROM Groups WHERE group_id=@group));
 
 	PRINT(@group);
@@ -27,12 +27,14 @@ BEGIN
 	PRINT(@start_date);
 	PRINT(@start_time);
 
+	
+    EXEC sp_SetDaysOff;
 	IF EXISTS	(SELECT lesson_id FROM Schedule WHERE [group]=@group AND discipline=@discipline)
 	BEGIN
 		PRINT(FORMATMESSAGE(N'Дисциплина "%s" уже выставлена для группы "%s"',@discipline_name, @group_name));
 		RETURN;
 	END
-
+	
 	WHILE @lesson_number <= @lessons_count
 	BEGIN
 			IF NOT EXISTS	(SELECT lesson_id FROM Schedule WHERE [group]=@group AND [date]=@date AND [time]=@start_time)
